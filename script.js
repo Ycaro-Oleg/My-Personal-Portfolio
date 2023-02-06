@@ -15,9 +15,6 @@ const contactSection = document.getElementById("contact");
 
 const personalInfo = document.getElementById("personal-info");
 
-const bike1 = document.getElementById("bike1");
-const bike2 = document.getElementById("bike2");
-
 function btnClick(e) {
   bio.classList.remove("blue-line");
   experience.classList.remove("blue-line");

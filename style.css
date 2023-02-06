@@ -63,23 +63,6 @@ main {
 }
 
 
-.codepen-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  background-color: #232323;
-  color: white;
-  text-align: center;
-  padding: 6px;
-  height: 30px;
-}
-.codepen-footer a {
-  color: var(--color-1);
-  text-decoration: none;
-}
-
 #personal-info {
   transition-duration: 0.8s;
   height: 250px;
@@ -134,40 +117,25 @@ main {
   gap: 40px;
 }
 .header-icons .header-icon-1 {
-  background-image: url("https://assets.codepen.io/9277864/programming-laptop-coding.svg");
+  background-image: url("");
 }
 .header-icons .header-icon-2 {
-  background-image: url("https://assets.codepen.io/9277864/programming.svg");
+  background-image: url("./imgs/SVG-\ HEAD\ CODE\ ITEM.png");
 }
 .header-icons .header-icon-3 {
-  background-image: url("https://assets.codepen.io/9277864/js.svg");
+  background-image: url("./imgs/SVG\ -\ JS\ CODE\ ITEM.png");
 }
 .header-icons .header-icon-4 {
-  background-image: url("https://assets.codepen.io/9277864/html.svg");
-}
-.header-icons .header-icon-5 {
-  background-image: url("https://assets.codepen.io/9277864/git.svg");
-}
-.header-icons .header-icon-6 {
-  background-image: url("https://assets.codepen.io/9277864/database-key.svg");
+  background-image: url("./imgs/SVG-\ HTML5\ CODE\ ITEM.png");
 }
 .header-icons .header-icon-7 {
-  background-image: url("https://assets.codepen.io/9277864/css.svg");
-}
-.header-icons .header-icon-8 {
-  background-image: url("https://assets.codepen.io/9277864/computer-bug-1.svg");
-}
-.header-icons .header-icon-9 {
-  background-image: url("https://assets.codepen.io/9277864/browser.svg");
+  background-image: url("./imgs/SVG-\ CSS\ CODE\ ITEM.png");
 }
 .header-icons .header-icon-10 {
-  background-image: url("https://assets.codepen.io/9277864/vue.svg");
-}
-.header-icons .header-icon-11 {
-  background-image: url("https://assets.codepen.io/9277864/python.svg");
+  background-image: url("./imgs/SVG-\ DATABASE\ CODE\ ITEM.png");
 }
 .header-icons .header-icon-12 {
-  background-image: url("https://assets.codepen.io/9277864/front-end.svg");
+  background-image: url("./imgs/SVG-\ REACTJS\ CODE\ ITEM.png");
 }
 
 
@@ -362,38 +330,22 @@ h2 {
   padding: 10px;
 }
 
-
 #contact {
   font-size: 20px;
+  
 }
 #contact .contact-item {
   display: flex;
   align-items: center;
   gap: 2px;
-  padding-inline: 30px;
+  padding-inline: 5px;
   padding-bottom: 8px;
 }
 #contact .contact-item p {
-  padding: 5px 20px 5px 5px;
+  padding: 0px 20px 2px 5px;
   border-right: 1px solid rgba(80, 72, 72, 0.2);
 }
-#contact .follow-btn {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 17px;
-}
-#contact .follow-btn a {
-  text-decoration: none;
-  color: var(--color-2);
-  padding: 10px 60px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  box-shadow: 6px 0 15px rgba(0, 0, 0, 0.4);
-  background-color: var(--color-6);
-}
-#contact .follow-btn:hover {
-  transform: scale(1.009);
-}
+
 
 
 @media only screen and (max-width: 420px) {
@@ -448,21 +400,6 @@ h2 {
     top: 93%;
     opacity: 0;
   }
-}
-.bike1 {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  transform: rotate(90deg);
-  opacity: 0;
-}
-
-.bike2 {
-  position: absolute;
-  top: 0;
-  left: -68px;
-  transform: rotate(90deg) scaleX(-1) scaleY(-1);
-  opacity: 0;
 }
 
 .animationBottom {
