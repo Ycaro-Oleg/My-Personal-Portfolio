@@ -1,15 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My personal portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Ycaro Olegário || Full Stack Web Developer [HTML, CSS, JavaScript, NodeJS, ReactJS, SQL]</title>
 </head>
+
 <body>
-    
-    
-    <script src="/script.js"></script>
+  <div class="wrapper">
+    <div class="container">
+      <header id="header">
+        <div id="personal-info">
+          <div class="avatar-container">
+            <img src="./imgs/Profile pic certa.jpg" alt="Ycaro Olegário" width="160" height="160" />
+          </div>
+          <div class="header-info-container">
+            <h1>Ycaro Olegário</h1>
+            <p>Full Stack Web Developer
+              <br>[HTML, CSS, JavaScript, NodeJS, ReactJS, SQL]
+            </p>
+           
+          </div>
+          <div class="header-icons">
+            <div class="header-icons-row first-icons">
+              <div class="header-icon-4"></div>
+              <div class="header-icon-2"></div>
+              <div class="header-icon-3"></div>
+            </div>
+            <div class="header-icons-row">
+              <div class="header-icon-7"></div>
+              <div class="header-icon-10"></div>
+              <div class="header-icon-12"></div>
+            </div>
+          </div>
+        </div>
+        <nav class="nav-container">
+          <ul>
+            <li class="active-bg" id="menu-item-1">
+              <button id="bio-btn" onClick="btnClick('bio')" class="blue-line">
+                <img src="https://assets.codepen.io/9277864/about-me.svg" alt="Bio" width="40" height="40" />
+                <p>Bio</p>
+              </button>
+            </li>
+            <li id="menu-item-2">
+              <button id="experience-btn" onClick="btnClick('experience')">
+                <img src="https://assets.codepen.io/9277864/office-work.svg" alt="Experience" width="40" height="40" />
+                <p>Experiência</p>
+              </button>
+            </li>
+            <li id="menu-item-3">
+              <button id="portfolio-btn" onClick="btnClick('portfolio')">
+                <img src="https://assets.codepen.io/9277864/page.svg" alt="Portfolio" width="40" height="40" />
+                <p>Portfolio</p>
+              </button>
+            </li>
+            <li id="menu-item-4">
+              <button id="contact-btn" onClick="btnClick('contact')">
+                <img src="https://assets.codepen.io/9277864/contact.svg" alt="Contact" width="40" height="40" />
+                <p>Contato</p>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="bio">
+          <h2>Bio</h2>
+          <p><span class="emoji">🙋‍♂️</span></p>
+          <p>Olá, meu nome é Ycaro Pires e sou apaixonado por tecnologia e desenvolvimento de software. Embora
+            eu ainda não tenha experiência prévia como fullstack developer, estou muito animado em aprender e
+            crescer na área. Acredito que minhass fortes habilidades de resolução de problemas , facilidade de
+            aprendizado e fluência na língua inglesa me permitirão alcançar meus objetivos rapidamente. Estou
+            animado em ter a oportunidade de mostrar minhas habilidades e contribuir para o sucesso de uma
+            equipe.</p>
+          <p>Sei o quanto é difícil aprender novas tecnologias no mundo da programação, especialmente fazer elas criarem vida, então eu compartilho:</p>
+          <ul>
+            <li><span class="emoji">👉</span> Oque eu sei tecnicamente e conceitualmente</li>
+            <li><span class="emoji">👉</span> Melhores práticas no ambiente de trabalho</li>
+            <li><span class="emoji">👉</span> Alguns de meus pequenos projetos</li>
+          </ul>
+          <p>Seria ótimo se nos conectássemos nas nossas redes sociais, especialmente no linkedin , conecte-se comigo e vamos compartilhar novos conhecimentos juntos !</p>
+
+          <div class="social-media">
+            <div><a href="https://www.instagram.com/ycaro_oleg/" target="_blank"><img src="https://assets.codepen.io/9277864/social-instagram-1.svg" alt="Instagram" width="28" height="28" /></a></div>
+            <div><a href="https://www.linkedin.com/in/ycaro-pires-944297240/" target="_blank"><img src="https://assets.codepen.io/9277864/linkedin.svg" alt="Linkedin" width="28" height="28" /></a></div>
+            <div><a href=mailto:"ycaro.oleg@gmail.com"><img src="https://assets.codepen.io/9277864/social-media-google.svg" alt="Google" width="28" height="28" /></a></div>
+          </div>
+        </section>
+        <section id="experience" class="display-none">
+          <h2>Experiência</h2>
+          <div class="history">
+            <div data-year="2021">
+              <h3>Professor de inglês particular -</h3>
+              <p>Ensinando conversação e listening para turma de alunos online</p>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio" class="display-none">
+          <h2>Portfolio</h2>
+          <div class="grid">
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/schedule-milestone-2.svg" alt="Project 1" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/designer-desk-1.svg" alt="Project 2" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/project-timeline-2.svg" alt="Project 3" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/business-presentation-1.svg" alt="Project 4" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/product-development-1.svg" alt="Project 5" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="display-none">
+          <h2>Contato</h2>
+          <div>
+            <div class="contact-item">
+              <p><img src="https://assets.codepen.io/9277864/location-user.svg" alt="Address Icon" width="55" height="25" /></p>
+              <address>Av Heráclito Graça 300 , APT - 401</address>
+            </div>
+            <div class="contact-item">
+              <p><img src="https://assets.codepen.io/9277864/envelope-letter.svg" alt="Email Icon" width="55" height="25" /></p>
+              <address>ycaro.oleg.job@gmail.com</address>
+            </div>
+            <div class="contact-item">
+              <p><img src="https://assets.codepen.io/9277864/mobile-phone-1.svg" alt="Phone Icon" width="55" height="25" /></p>
+              <address>85-98982-8279</address>
+            </div>
+          </div>
+        </section>
+      </main>
+      <img src="https://assets.codepen.io/9277864/u%2B1f6f5.svg" alt="Bike" width="70" height="70" id="bike1" class="bike1" />
+      <img src="https://assets.codepen.io/9277864/u%2B1f6f5.svg" alt="Bike" width="70" height="70" id="bike2" class="bike2" />
+    </div>
+  </div>
+</body>
+
+</html>
+  <script  src="./script.js"></script>
+
 </body>
 </html>
